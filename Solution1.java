@@ -17,9 +17,20 @@ class Solution1 {
                 {'9', '.', '.', '2', '.', '.', '.', '.', '8'},
                 {'8', '4', '.', '6', '.', '7', '.', '1', '9'},
         };
+        
+        char[][] arr2 = {
+                {'.','.','.','.'},
+                {'.','.','1','.'},
+                {'.','.','.','1'},
+                {'3','.','2','.'},
+        };
 
         solveSudoku(arr);
+        solveSudoku(arr2);
         for (char[] chars : arr) {
+            System.out.println(Arrays.toString(chars));
+        }
+        for (char[] chars : arr2) {
             System.out.println(Arrays.toString(chars));
         }
     }
